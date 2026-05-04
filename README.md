@@ -14,7 +14,7 @@ streamlit run APP.py
   Input Image
        |
        v
-  [1] Card Detection -----> No card found --> REJECT
+  [1] Card Detection ────────> No card found ──> REJECT
        |
        v
   [2] Crop Card Region
@@ -24,15 +24,15 @@ streamlit run APP.py
        |
        v
   [4] Hybrid OCR
-       |--- Arabic fields  --> EasyOCR
-       |--- English fields --> PaddleOCR (PP-OCRv5)
-       |--- NID digits     --> YOLO digit-level detection
+       |─── Arabic fields  ──> EasyOCR
+       |─── English fields ──> PaddleOCR (PP-OCRv5)
+       |─── NID digits     ──> YOLO digit-level detection
        |
        v
-  [5] Parsing (raw text --> structured JSON)
+  [5] Parsing (raw text ──> structured JSON)
        |
        v
-  [6] NID Decoding (14-digit --> birth date, governorate, gender)
+  [6] NID Decoding (14-digit ──> birth date, governorate, gender)
        |
        v
   [7] Validation Engine (7 automated checks)
@@ -41,7 +41,7 @@ streamlit run APP.py
   [8] LLM Explanation (Gemini 2.0 Flash / rule-based fallback)
        |
        v
-  Final Verdict: VERIFIED | REJECTED
+  Final Verdict:  VERIFIED  |  REJECTED
 ```
 
 ---
