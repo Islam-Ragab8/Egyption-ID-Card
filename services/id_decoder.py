@@ -4,9 +4,7 @@ Extracts birth date, governorate, and gender.
 """
 
 import re
-
 from config.settings import GOVERNORATES
-
 
 def remove_numbers(text: str) -> str:
     """Strip all digits from *text*."""
