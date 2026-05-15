@@ -1,4 +1,4 @@
-# HUWIYA — Egyptian National ID Card Verification System
+# Egyptian National ID Card Verification System
 
 An end-to-end AI pipeline that detects, reads, and verifies Egyptian National ID cards from a single photograph using **YOLOv8 + Hybrid OCR (EasyOCR + PaddleOCR) + Rule-Based Validation + LLM Explainability**.
 
