@@ -32,7 +32,7 @@ def decode_national_id(id_number: str) -> dict:
     month = int(id_number[3:5])
     day = int(id_number[5:7])
     governorate_code = id_number[7:9]
-    gender_code = int(id_number[12])
+    gender_code = int(id_number[12]) 
 
     if century_digit == 2:
         full_year = 1900 + year

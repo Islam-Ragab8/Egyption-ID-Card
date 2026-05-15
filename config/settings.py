@@ -13,8 +13,8 @@ WEIGHTS_DIR = os.path.join(BASE_DIR, "weights")
 # ──────────────────────────────────────────────
 # Model Paths  (all inside weights/ folder)
 # ──────────────────────────────────────────────
-ID_CARD_MODEL_PATH = os.path.join(WEIGHTS_DIR, "detect egypt card.pt")
-FIELD_DETECTION_MODEL_PATH = os.path.join(WEIGHTS_DIR, "detect_odjects.pt")
+ID_CARD_MODEL_PATH = os.path.join(WEIGHTS_DIR, "detect_id_card.pt")
+FIELD_DETECTION_MODEL_PATH = os.path.join(WEIGHTS_DIR, "detect_objects.pt")
 NID_DETECTION_MODEL_PATH = os.path.join(WEIGHTS_DIR, "detect_id.pt")
 
 # ──────────────────────────────────────────────
