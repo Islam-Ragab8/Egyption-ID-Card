@@ -9,18 +9,18 @@ import streamlit as st
 from config.settings import PAGE_TITLE, PAGE_ICON, PAGE_LAYOUT
 from pages import home, guide
 
-# ── Page config ──────────────────────────────
+# ── Page config 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON, layout=PAGE_LAYOUT)
 
-# ── Session state ────────────────────────────
+# ── Session state 
 if "current_tab" not in st.session_state:
     st.session_state.current_tab = "Home"
 
-# ── Sidebar navigation ──────────────────────
+# ── Sidebar navigation 
 tabs = ["Home", "Guide"]
 st.session_state.current_tab = st.sidebar.radio("Navigation", tabs)
 
-# ── Route to the selected page ───────────────
+# ── Route to the selected page 
 if st.session_state.current_tab == "Home":
     home.render()
 elif st.session_state.current_tab == "Guide":
